@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: "Red Hat Display", serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background-color: #767a4f;
+            padding: 1em;
+        }
+
+        .navbar a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .content {
+            padding: 40px;
+            text-align: left;
+        }
+
+        .hvr-float {
+            display: inline-block;
+            vertical-align: middle;
+            -webkit-transform: perspective(1px) translateZ(0);
+            transform: perspective(1px) translateZ(0);
+            box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+            -webkit-transition-duration: 0.3s;
+            transition-duration: 0.3s;
+            -webkit-transition-property: transform;
+            transition-property: transform;
+            -webkit-transition-timing-function: ease-out;
+            transition-timing-function: ease-out;
+        }
+
+        .hvr-float:hover,
+        .hvr-float:focus,
+        .hvr-float:active {
+            -webkit-transform: translateY(-8px);
+            transform: translateY(-8px);
+        }
+
+        .hvr-shadow {
+            display: inline-block;
+            vertical-align: middle;
+            -webkit-transform: perspective(1px) translateZ(0);
+            transform: perspective(1px) translateZ(0);
+            box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+            -webkit-transition-duration: 0.3s;
+            transition-duration: 0.3s;
+            -webkit-transition-property: box-shadow;
+            transition-property: box-shadow;
+        }
+
+        .hvr-shadow:hover,
+        .hvr-shadow:focus,
+        .hvr-shadow:active {
+            box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+        }
+
+        .hvr-underline-reveal {
+            display: inline-block;
+            vertical-align: middle;
+            -webkit-transform: perspective(1px) translateZ(0);
+            transform: perspective(1px) translateZ(0);
+            box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hvr-underline-reveal:before {
+            content: "";
+            position: absolute;
+            z-index: -1;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: #d19c20;
+            height: 4px;
+            -webkit-transform: translateY(4px);
+            transform: translateY(4px);
+            -webkit-transition-property: transform;
+            transition-property: transform;
+            -webkit-transition-duration: 0.3s;
+            transition-duration: 0.3s;
+            -webkit-transition-timing-function: ease-out;
+            transition-timing-function: ease-out;
+        }
+
+        .hvr-underline-reveal:hover:before,
+        .hvr-underline-reveal:focus:before,
+        .hvr-underline-reveal:active:before {
+            -webkit-transform: translateY(0);
+            transform: translateY(0);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <a class="hvr-float hvr-shadow hvr-underline-reveal" href="index.html">About Me</a>
+        <a class="hvr-float hvr-shadow hvr-underline-reveal" href="subjects.html"><b>Subject Taken</b></a>
+        <a class="hvr-float hvr-shadow hvr-underline-reveal" href="enrolled.html">Enrolled Subjects</a>
+        <a class="hvr-float hvr-shadow hvr-underline-reveal" href="contact.html">Contact Me</a>
+        <a class="hvr-float hvr-shadow hvr-underline-reveal" href="favorites.html">My Favorites</a>
+    </div>
+    <div class="content">
+        <h1>ABOUT ME</h1>
+        <div style="display: flex; align-items: flex-start;">
+            <img src="profile.jpg" alt="me" width="200px" height="200px">
+            <div style="margin-left: 20px;">
+                <h2 style="margin: 0;">Ian Gabriel B. Libetario</h2>
+                <h4 style="margin: 0;">Studies at Misamis University</h4>
+                <br />
+                <p style="margin: 0;">Currently a 2nd year student taking BSIT program</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

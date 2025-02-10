@@ -134,6 +134,12 @@ ul.social-icons {
   padding-bottom: 25px;
 }
 
+.subjects-card-box h3{
+  font-size: 30px;
+  color: #ffffff;
+  padding-bottom: 25px;
+}
+
 section.table-section {
   background-color: rgb(23, 30, 26);
   color: #fff;
@@ -146,7 +152,7 @@ section.table-section {
   padding: 25px 30px;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 25px;
+  margin-bottom: 10px;
 }
 .responsive-table .table-header {
   background-color: #95a5a6;
@@ -197,15 +203,26 @@ small {
   font-size: 7px;
 }
 
-.pagination-buttons button {
-  margin-right: 10px;
+.pagination-buttons {
   text-align: center;
+}
+
+.pagination-buttons button {
+  margin-right: 2px;
 }
 
 .pagination-buttons button > a {
   text-decoration: none;
   color: #fff;
 }
+
+.semester {
+  display: none;
+}
+.semester.active {
+  display: block;
+}
+
 /* buttons */
 .btn {
   padding: 10px 20px;

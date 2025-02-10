@@ -168,7 +168,8 @@
                     </li>
                     <li class="table-row">
                         <div class="col col-1">HIST 1<small>HS141CS</small></div>
-                        <div class="col col-2">READINGS IN PHILIPPINE HISTORY /MGA BABASAHIN HINGGIL SA KASAYSAYAN NG PILIPINAS</div>
+                        <div class="col col-2">READINGS IN PHILIPPINE HISTORY /MGA BABASAHIN HINGGIL SA KASAYSAYAN NG
+                            PILIPINAS</div>
                         <div class="col col-3">3</div>
                     </li>
                     <li class="table-row">
@@ -246,7 +247,7 @@
     <!-- JS -->
     <script>
         let currentSemester = 1;
-    
+
         function showSemester(semester) {
             document.querySelectorAll('.semester').forEach((sem) => {
                 sem.classList.remove('active');
@@ -255,27 +256,27 @@
             currentSemester = semester;
             updatePaginationButtons();
         }
-    
+
         function prevSemester() {
             if (currentSemester > 1) {
                 showSemester(currentSemester - 1);
             }
         }
-    
+
         function nextSemester() {
             if (currentSemester < 4) {
                 showSemester(currentSemester + 1);
             }
         }
-    
+
         function updatePaginationButtons() {
             document.querySelector('.pagination-buttons .btn-dark-outlined[onclick="prevSemester()"]').disabled = currentSemester === 1;
             document.querySelector('.pagination-buttons .btn-dark-outlined[onclick="nextSemester()"]').disabled = currentSemester === 4;
         }
-    
+
         // Initialize the buttons state on page load
         document.addEventListener('DOMContentLoaded', updatePaginationButtons);
-    </script>    
+    </script>
     <script src="https://atugatran.github.io/FontAwesome6Pro/js/all.min.js"></script>
 </body>
 
